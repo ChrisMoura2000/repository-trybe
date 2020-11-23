@@ -1,14 +1,14 @@
 # Trybe
 
-Este repositÃ³rio contÃ©m todas as atividades de aprendizagem desenvolvidas por _[SeuNomeAqui](LinkDoSeuLinkedinAqui)_ enquanto estudava na [Trybe](https://www.betrybe.com/) :rocket:
+Este repositório contém todas as atividades de aprendizagem desenvolvidas por _[Christopher de Oliveira Moura]_ enquanto estudava na [Trybe](https://www.betrybe.com/) :rocket:
 
-_"A Trybe Ã© uma escola do futuro para qualquer pessoa que queira melhorar de vida e construir uma carreira de sucesso em tecnologia, onde a pessoa sÃ³ paga quando conseguir um bom trabalho."_
+_"A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vida e construir uma carreira de sucesso em tecnologia, onde a pessoa só paga quando conseguir um bom trabalho."_
 
-O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda introduÃ§Ã£o ao desenvolvimento de software, front-end, back-end, ciÃªncia da computaÃ§Ã£o, engenharia de software, metodologias Ã¡geis e habilidades comportamentais.
+O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda introdução ao desenvolvimento de software, front-end, back-end, ciência da computação, engenharia de software, metodologias Ágeis e habilidades comportamentais.
 
-## Fundamentos doDesenvolvimento Web :white_check_mark:
+## Fundamentos do Desenvolvimento Web :white_check_mark:
 
-##### Bloco 1: IntroduÃ§Ã£o - Unix & Shell
+##### Bloco 1: Introdução - Unix & Shell
 
 - [ ] 1-3: _Unix & Bash - Part 1_
 - [ ] 1-4: _Unix & Bash - Part 2_
@@ -16,27 +16,27 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 2: Git & GitHub
 
-- [ ] 2-1: _O que Ã© e para que serve?_
+- [ ] 2-1: _O que é e para que serve?_
 - [ ] 2-2: _Entendendo os comandos_
 - [ ] 2-3: _Internet - Entendendo como ela funciona_
 
-##### Bloco 3: IntroduÃ§Ã£o - HTML & CSS
+##### Bloco 3: Introdução - HTML & CSS
 
-- [ ] 3-1: _HTML & CSS - Estruturas de pÃ¡gina_
+- [ ] 3-1: _HTML & CSS - Estruturas de página_
 - [ ] 3-2: _HTML & CSS - Primeiros passos em CSS_
 - [ ] 3-3: _HTML & CSS - Seletores e posicionamento_
-- [ ] 3-4: _HTML SemÃ¢ntico_
+- [ ] 3-4: _HTML Semãntico_
 - [ ] 3-5: _[Projeto - HTML & CSS]()_
 
-##### Bloco 4: IntroduÃ§Ã£o - JavaScript
+##### Bloco 4: Introdução - JavaScript
 
 - [ ] 4-1: _JavaScript - Primeiros passos_
 - [ ] 4-2: _JavaScript - Array e loop For_
-- [ ] 4-3: _JavaScript - LÃ³gica de ProgramaÃ§Ã£o e Algoritmos_
-- [ ] 4-4: _JavaScript - Objetos e funÃ§Ãµes_
+- [ ] 4-3: _JavaScript - Lógica de Programação e Algoritmos_
+- [ ] 4-4: _JavaScript - Objetos e funções_
 - [ ] 4-5: _[Projeto - Playground Functions]()_
 
-##### Bloco 5: IntroduÃ§Ã£o - JavaScript - Projetos
+##### Bloco 5: Introdução - JavaScript - Projetos
 
 - [ ] 5-1: _JavaScript - DOM e seletores_
 - [ ] 5-2: _JavaScript - Trabalhando com elementos_
@@ -48,21 +48,21 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 5-7: _[Projeto - Adivinhe a Cor]()_
 - [ ] 5-7: _[Projeto - Carta Misteriosa]()_
 
-##### Bloco 6: HTML & CSS avanÃ§ado
+##### Bloco 6: HTML & CSS avançado
 
 - [ ] 6-1: _HTML & CSS - Forms_
 - [ ] 6-2: _Bibliotecas JavaScript e Frameworks CSS_
 - [ ] 6-3: _CSS Flexbox - Part 1_
 - [ ] 6-4: _CSS Flexbox - Part 2_
 - [ ] 6-5: _CSS Responsivo - Mobile First_
-- [ ] 6-6: _[Projeto - PÃ¡gina inicial do Facebook]()_
+- [ ] 6-6: _[Projeto - Página inicial do Facebook]()_
 
 ##### Bloco 7: JavaScript ES6 & Testes UnitÃ¡rios
 
 - [ ] 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
 - [ ] 7-2: _JavaScript ES6 - Objects_
-- [ ] 7-3: _Testes unitÃ¡rios em JavaScript_
-- [ ] 7-4: _[Projeto - JavaScript Testes UnitÃ¡rios]()_
+- [ ] 7-3: _Testes unitários em JavaScript_
+- [ ] 7-4: _[Projeto - JavaScript Testes Unitários]()_
 
 ##### Bloco 8: JavaScript ES6
 
@@ -74,16 +74,16 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 9: Assincronicidade & Callbacks
 
-- [ ] 9-1: _JavaScript AssÃ­ncrono e Callbacks_
+- [ ] 9-1: _JavaScript Assíncrono e Callbacks_
 - [ ] 9-2: _JavaScript Promises_
 - [ ] 9-3: _[Projeto - Carrinho de Compras]()_
 
 ##### Bloco 10: Jest
 
 - [ ] 10-1: _Primeiros passos no Jest_
-- [ ] 10-2: _Jest - Testes AssÃ­ncronos_
+- [ ] 10-2: _Jest - Testes Assíncronos_
 - [ ] 10-3: _Jest - Simulando comportamentos_
-- [ ] 10-4: _[Projeto - Jest AssÃ­ncrono e Mocking]()_
+- [ ] 10-4: _[Projeto - Jest Assíncrono e Mocking]()_
 
 ## Desenvolvimento Front-end :hourglass_flowing_sand:
 
@@ -96,7 +96,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 ##### Bloco 12: React
 
 - [ ] 12-1: _Components com estado_
-- [ ] 12-2: _Eventos e formulÃ¡rios no React_
+- [ ] 12-2: _Eventos e formulários no React_
 - [ ] 12-3: _[Projeto - Movie Cards Library Stateful]()_
 
 ##### Bloco 13: React
@@ -106,9 +106,9 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 13-3: _React Router_
 - [ ] 13-4: _[Projeto - Movie Cards Library CRUD]()_
 
-##### Bloco 14: Metodologias Ãgeis
+##### Bloco 14: Metodologias ágeis
 
-- [ ] 14-1: _Metodologias Ãgeis_
+- [ ] 14-1: _Metodologias ágeis_
 - [ ] 14-2: _[Projeto - Frontend Online Store]()_
 
 ##### Bloco 15: Testes em React
@@ -117,7 +117,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 15-2: _Testando React com a React Testing Library - Parte 2_
 - [ ] 15-3: _[Projeto - Testes em React]()_
 
-##### Bloco 16: IntroduÃ§Ã£o ao Redux
+##### Bloco 16: Introdução ao Redux
 
 - [ ] 16-1: _IntroduÃ§Ã£o ao Redux_
 - [ ] 16-2: _React com Redux - Parte 1_
@@ -239,7 +239,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ## CiÃªncia da ComputaÃ§Ã£o :hourglass_flowing_sand:
 
-##### Bloco 35: IntroduÃ§Ã£o - CiÃªncia da ComputaÃ§Ã£o
+##### Bloco 35: IntroduÃ§Ã£o - Ciência da Computação
 
 - [ ] 35-1: _Arquitetura de Computadores_
 - [ ] 35-2: _Arquitetura de redes_
@@ -250,8 +250,8 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [ ] 35-1: _Aprendendo Python_
 - [ ] 35-2: _Testes e ExceÃ§Ãµes_
-- [ ] 35-3: _Entrada e SaÃ­da de dados_
-- [ ] 36-4: _Entrada e SaÃ­da de dados_
+- [ ] 35-3: _Entrada e Saída de dados_
+- [ ] 36-4: _Entrada e Saída de dados_
 - [ ] 35-5: _[Projeto - Tech news]()_
 
 # [...]
