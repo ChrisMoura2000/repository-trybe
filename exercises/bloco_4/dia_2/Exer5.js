@@ -8,5 +8,4 @@ for (let index = 0; index < numbers.length; index += 1){
         bigger = numbers[index]
     }    
 }
-
 console.log(bigger)

@@ -6,3 +6,11 @@ let resultado = (a - b);
 console.log(resultado);
 
 //Deu certo
+
+// Refatorando o codigo utilizando function.
+
+function subtrair(a, b) {
+    return a - b
+}
+
+// A função também deu certo
