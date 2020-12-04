@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+        /* 
+        function criaTags(tag, name, classe){
+            var tagVar = document.createElement(tag)
+            document.body.appendChild(tagVar)
+            tagVar.innerText = name
+            tagVar.className = classe
+
+        }
+        let texto = 'Aqui é um texto exemplo para a função criar tags.'
+        criaTags('div', texto, )
+        criaTags('p', texto, 'primeiro-paragrafo')
+        document.getElementsByClassName('primeiro-paragrafo')[0].style.color = 'blue'
+        criaTags('em', 'Aqui é um titulo', 'titulo')
+        */
+        
+    //1.Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body ;
+        let varieavelh1 = document.createElement('h1');
+        document.body.appendChild(varieavelh1);
+        varieavelh1.innerText = 'Exercício 5.2 - JavaScript DOM';
+
+    //2.Adicione a tag div com a classe main-content como filho da tag body ;
+        let div1 = document.createElement('div');
+        document.body.appendChild(div1);
+        div1.className = 'main-content';
+
+    //3.Adicione a tag div com a classe center-content como filho da tag div criada no passo 2;
+        let div2 = document.createElement('div');
+        div1.appendChild(div2)
+        div2.className = 'center-content'
+
+    //4.Adicione a tag p como filho do div criado no passo 3 e coloque algum texto;
+        let tagP = document.createElement('p');
+        div2.appendChild(tagP);
+        tagP.innerText = 'Texto para acrescentar na tag <p>';
+    
+    //5.Adicione a tag div com a classe left-content como filho da tag div criada no passo 2;
+        let div3 = document.createElement('div');
+        div1.appendChild(div3);
+        div3.className = 'left-content';
+
+    //6.Adicione a tag div com a classe right-content como filho da tag div criada no passo 2;
+        let div4 = document.createElement('div');
+        div1.appendChild(div4);
+        div4.className = 'right-content';
+
+    //7.Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image . Esse elemento deve ser filho do div criado no passo 5;
+        let imagem = document.createElement('img')
+        div3.appendChild(imagem);
+        imagem.src = 'https://picsum.photos/200' 
+
+
+    </script>
+  </body>
+</html>
