@@ -15,6 +15,7 @@ function createDaysOfTheWeek() {
   
   // Escreva seu código abaixo.
 
+  //Exercício 1:
   function createDaysOfMonth(){
     const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
     let elementUl = document.querySelector('#days');
@@ -32,7 +33,36 @@ function createDaysOfTheWeek() {
            elementLi.className += ' friday'
         }
     }
-
   }
+    createDaysOfMonth()
 
-  createDaysOfMonth()
+  //Exercicio2
+    function addBoton (string){
+      let boton = document.createElement('button');
+      let divBoton = document.querySelector('.buttons-container');
+      divBoton.appendChild(boton)
+      boton.id = 'btn-holiday' 
+      boton.innerText = string;
+    }
+  addBoton('Feriados')
+  
+  //Exercicio3
+  function clickHoliday(){
+    let classeHoliday = document.querySelectorAll('.day-holiday')
+    for (let index = 0; index < classeHoliday.length; index += 1){
+      classeHoliday[index].style.backgroundColor = 'green'
+      classeHoliday[index].style.color = 'black'
+    }
+  }
+let botao = document.querySelector('#btn-holiday');
+botao.addEventListener('click', clickHoliday)
+
+  //Exercício 4:
+  function fridayDay(string){
+    let botFriday = document.createElement('button');
+    let divPai = document.querySelector('.buttons-container');
+    divPai.appendChild(botFriday);
+    botFriday.innerText = string  
+    botFriday.id = 'btn-holiday'
+  }
+fridayDay('Sexta-feira')

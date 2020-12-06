@@ -56,57 +56,69 @@
     </style>
   </head>
   <body>
-    <script>
-        /* 
-        function criaTags(tag, name, classe){
-            var tagVar = document.createElement(tag)
-            document.body.appendChild(tagVar)
-            tagVar.innerText = name
-            tagVar.className = classe
+    <script>         
+      //1.Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body ;
+      //Adicione a classe title na tag h1 criada;
 
-        }
-        let texto = 'Aqui é um texto exemplo para a função criar tags.'
-        criaTags('div', texto, )
-        criaTags('p', texto, 'primeiro-paragrafo')
-        document.getElementsByClassName('primeiro-paragrafo')[0].style.color = 'blue'
-        criaTags('em', 'Aqui é um titulo', 'titulo')
-        */
-        
-    //1.Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body ;
         let varieavelh1 = document.createElement('h1');
         document.body.appendChild(varieavelh1);
         varieavelh1.innerText = 'Exercício 5.2 - JavaScript DOM';
+        varieavelh1.className = 'title'
 
-    //2.Adicione a tag div com a classe main-content como filho da tag body ;
+      //2.Adicione a tag div com a classe main-content como filho da tag body ;
         let div1 = document.createElement('div');
         document.body.appendChild(div1);
         div1.className = 'main-content';
 
-    //3.Adicione a tag div com a classe center-content como filho da tag div criada no passo 2;
+      //3.Adicione a tag div com a classe center-content como filho da tag div criada no passo 2;
         let div2 = document.createElement('div');
         div1.appendChild(div2)
         div2.className = 'center-content'
 
-    //4.Adicione a tag p como filho do div criado no passo 3 e coloque algum texto;
+      //4.Adicione a tag p como filho do div criado no passo 3 e coloque algum texto;
         let tagP = document.createElement('p');
         div2.appendChild(tagP);
         tagP.innerText = 'Texto para acrescentar na tag <p>';
-    
-    //5.Adicione a tag div com a classe left-content como filho da tag div criada no passo 2;
+      
+      //5.Adicione a tag div com a classe left-content como filho da tag div criada no passo 2;
+      
         let div3 = document.createElement('div');
         div1.appendChild(div3);
         div3.className = 'left-content';
 
-    //6.Adicione a tag div com a classe right-content como filho da tag div criada no passo 2;
+      //6.Adicione a tag div com a classe right-content como filho da tag div criada no passo 2;
         let div4 = document.createElement('div');
         div1.appendChild(div4);
         div4.className = 'right-content';
 
-    //7.Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image . Esse elemento deve ser filho do div criado no passo 5;
+      //7.Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image . Esse elemento deve ser filho do div criado no passo 5;
         let imagem = document.createElement('img')
         div3.appendChild(imagem);
         imagem.src = 'https://picsum.photos/200' 
 
+      //8.Adicione uma lista não ordenada com os valores de 1 a 10 por extenso como valores da lista. Essa lista deve ser filha do div criado no passo 6;
+          let listaUl = document.createElement('ul');
+          div4.appendChild(listaUl);
+          listaUl.className = 'unorder-list'
+          let ingredientItens = ['1','2','3','4','5','6','7','8','9','10'];
+          let ingredientList = listaUl;
+          for(let index = 0; index < ingredientItens.length; index += 1){
+            let ingredient = ingredientItens[index]
+
+            let ingredientListItem = document.createElement('li');
+            ingredientListItem.innerText = ingredient;
+            ingredientList.appendChild(ingredientListItem)
+          }
+
+        //9. Adicione 3 tags h3 , todas sendo filhas do div criado no passo 2.
+        //Adicione a classe description nas 3 tags h3 criadas;
+          for (let i = 1; i <= 3; i += 1){
+            let tagH3 = document.createElement('h3');
+            div1.appendChild(tagH3);
+            tagH3.className = 'description'
+          }
+          
+          div1.removeChild(div3)         
 
     </script>
   </body>
