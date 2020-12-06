@@ -51,11 +51,17 @@ function createDaysOfTheWeek() {
     let classeHoliday = document.querySelectorAll('.day-holiday')
     for (let index = 0; index < classeHoliday.length; index += 1){
       classeHoliday[index].style.backgroundColor = 'green'
-      classeHoliday[index].style.color = 'black'
     }
   }
-let botao = document.querySelector('#btn-holiday');
-botao.addEventListener('click', clickHoliday)
+  function dbkClickHoliday(){
+    let classeHoliday = document.querySelectorAll('.day-holiday')
+    for (let index = 0; index < classeHoliday.length; index += 1){
+      classeHoliday[index].style.backgroundColor = 'rgb(238,238,238)'
+    }
+  }
+  let botao = document.querySelector('#btn-holiday');
+  botao.addEventListener('click', clickHoliday);
+  botao.addEventListener('dblclick', dbkClickHoliday);
 
   //Exercício 4:
   function fridayDay(string){
@@ -64,5 +70,17 @@ botao.addEventListener('click', clickHoliday)
     divPai.appendChild(botFriday);
     botFriday.innerText = string  
     botFriday.id = 'btn-holiday'
+    botFriday.className = 'botFriday'
   }
 fridayDay('Sexta-feira')
+
+//Exercicio 5
+
+function changeToFriday(){
+  let classFriday = document.querySelectorAll('.friday');
+  for (let index = 0; index < classFriday.length; index += 1){
+    classFriday[index].innerText = 'Sexta-feira'
+  }
+}
+let botao2 = document.querySelector('.botFriday')
+botao2.addEventListener('click', changeToFriday)
