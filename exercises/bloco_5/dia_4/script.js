@@ -4,8 +4,15 @@ const fontSize = document.querySelector('#fontSize');
 const espaceLetters = document.querySelector('#espaceLetters');
 const fontStyle = document.querySelector('#fontStyle');
 
-backColor.addEventListener('mousein', function (){
+backColor.addEventListener('change', function (){
     localStorage.setItem('corFundo', backColor.value);
     document.body.style.backgroundColor = localStorage.corFundo;
 })
 document.body.style.backgroundColor = localStorage.corFundo;
+
+colorTxt.addEventListener('change', function (){
+    localStorage.setItem('corFonte', colorTxt.value);
+    document.body.style.color = localStorage.corFonte;
+})
+document.body.style.color = localStorage.corFonte;
+
