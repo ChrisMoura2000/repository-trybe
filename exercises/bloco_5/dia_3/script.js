@@ -50,18 +50,19 @@ function createDaysOfTheWeek() {
   function clickHoliday(){
     let classeHoliday = document.querySelectorAll('.day-holiday')
     for (let index = 0; index < classeHoliday.length; index += 1){
-      classeHoliday[index].style.backgroundColor = 'green'
+      classeHoliday[index].style.backgroundColor = 'white'
     }
   }
-  function dbkClickHoliday(){
+  function dblClickHoliday(){
     let classeHoliday = document.querySelectorAll('.day-holiday')
     for (let index = 0; index < classeHoliday.length; index += 1){
       classeHoliday[index].style.backgroundColor = 'rgb(238,238,238)'
     }
   }
+  
   let botao = document.querySelector('#btn-holiday');
-  botao.addEventListener('click', clickHoliday);
-  botao.addEventListener('dblclick', dbkClickHoliday);
+  botao.addEventListener('click', clickHoliday); 
+  botao.addEventListener('dblclick', dblClickHoliday);
 
   //Exercício 4:
   function fridayDay(string){
@@ -75,12 +76,57 @@ function createDaysOfTheWeek() {
 fridayDay('Sexta-feira')
 
 //Exercicio 5
-
+let diasOriginais = [];
+let classFriday = document.querySelectorAll('.friday');
+for (let index = 0; index < classFriday.length; index += 1){
+  diasOriginais[index] = classFriday[index].innerText;
+}
 function changeToFriday(){
-  let classFriday = document.querySelectorAll('.friday');
+  
   for (let index = 0; index < classFriday.length; index += 1){
-    classFriday[index].innerText = 'Sexta-feira'
+    if (classFriday[index].innerText === 'Sextou'){
+      classFriday[index].innerText = diasOriginais[index];
+    }else{
+      classFriday[index].innerText = 'Sextou'
+    }
   }
+  console.log(diasOriginais)
 }
 let botao2 = document.querySelector('.botFriday')
 botao2.addEventListener('click', changeToFriday)
+
+//Exercicio 6
+/*
+function zoomin(event){
+  event.target.style.fontSize = '40px'
+  event.target.style.color = 'green'
+}
+
+function zoomout(event){
+  event.target.style.fontSize = '20px'
+  event.target.style.color = ''
+}
+
+function zoom(){
+  let classeDay = document.querySelectorAll('.day')
+  for (let index = 0; index < classeDay.length; index += 1){
+    classeDay[index].addEventListener('mouseover', zoomin);
+    classeDay[index].addEventListener('mouseleave', zoomout);
+  }
+}
+zoom()
+*/
+
+//Exercicio7
+/*Implemente uma função que adiciona uma tarefa personalizada ao calendário. A função deve receber como parâmetro a string com o nome da tarefa (ex: "cozinhar") e criar dinamicamente um elemento com a tag <span> contendo a tarefa.
+O elemento criado deverá ser adicionado como filho/filha da tag <div> que possui a classe "my-tasks" .*/
+let nomeTask = document.querySelector('#task-input');
+let valor = nomeTask.value;
+let btn = document.querySelector('#btn-add');
+function addTask(string){
+  let span = document.createElement('span');
+  let myTasksDiv = document.querySelector('.my-tasks');
+  myTasksDiv.innerText = string;
+  myTasksDiv.appendChild(span)
+}
+btn.addEventListener('click', addTask(valor))
