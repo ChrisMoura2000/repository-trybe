@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form id="form" method="GET">
+    <!--Iformações pessoais-->
+    <fieldset>
+      <!--Nome-->
+      <div>
+        <input name='nome' id="name" type="text" placeholder="Name" maxlength="40" required>
+      </div>
+      <!--Email-->
+      <div>
+        <input type="email" name="email" id="input-email" placeholder="E-mail" maxlength="50" required>
+      </div>
+      <!--CPF-->
+      <div>
+        <input type="text" name="cpf" id="cpf" maxlength="11" placeholder="CPF" required>
+      </div>
+      <!--Endereço-->
+      <div>
+        <input type="text" name="endereco" id="endereco" placeholder="Endereço" maxlength="200" required>
+      </div>
+      <!--Cidade-->
+      <div>
+        <input type="text" name="cidade" id="city" placeholder="Cidade" maxlength="28" required>
+      </div>
+      <!--Estados-->
+      <div>
+        <select name="state" id="state" required>
+        <!--As options foram criadas no js-->
+        </select>
+      </div>
+      <div>
+        <label for="casa">
+          <input type="radio" name="moradia" id="casa" required>
+          Casa
+        </label>
+        <label for="ap">
+          <input type="radio" name="moradia" id="ap" required>
+          Apartamento
+        </label>        
+      </div>
+    </fieldset>
+    <!--Informações curriculo-->
+    <fieldset>
+      <!--Resumo do Curriculo-->
+      <div>
+        <textarea name="resumo-curriculo" id="curriculo" cols="30" rows="10" placeholder="Resumo do curriculo..." maxlength="1000" required></textarea>
+      </div>
+      <!--Cargo-->
+      <div>
+        Cargo <br>
+        <input type="text" name="cargo" id="cargo">
+      </div>
+      <!--Descrição do cargo-->
+      <div>
+        <textarea name="descricao-cargo" cols="30" rows="10" maxlength="500" placeholder="Descrição do cargo..." id="descricao" required></textarea>
+      </div>
+      <!--Data de inicio-->
+      <div>
+        <input type="date" name="data" id="data">
+      </div>
+    </fieldset>
+
+    <button type="submit" id="bot">Pronto</button>
+
+  </form>
+</body>
+<script src="script.js"></script>
+</html>
