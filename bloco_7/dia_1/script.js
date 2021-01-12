@@ -1,3 +1,4 @@
+/* 
 let  testingScope = (escopo) => { 
     if (escopo) { 
       var ifScope = 'Não devo ser utilizada fora do meu escopo (if)';
@@ -8,5 +9,12 @@ let  testingScope = (escopo) => {
       console.log(elseScope);
     }
 }
-
 testingScope(false);
+*/
+
+const oddsAndEvens = [13, 3, 4, 10, 7, 2];
+let compareNumbers = (a, b) => a - b;
+
+oddsAndEvens.sort(compareNumbers);
+
+console.log(`Os números ${oddsAndEvens} se encontram ordenados de forma crescente!`);
