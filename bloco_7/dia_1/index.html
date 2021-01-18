@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parte II dia 7.1</title>
+</head>
+<body>
+    <div style="display: flex; justify-content: space-around; align-items: center;">
+      <button style="width: 200px; height: 200px; font-size: 26px;" >Click em mim</button>
+      <h1>Número de clicks: <span>0</span></h1>
+    </div>
+</body>
+<script>
+
+    
+    let bot = document.querySelector('button')
+    let clickCount = 1;
+
+    bot.addEventListener('click', () => {
+        const span = document.querySelector('span');
+        span.innerText = clickCount
+        clickCount += 1;
+    })
+
+</script>
+</html>
