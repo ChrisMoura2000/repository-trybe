@@ -63,15 +63,45 @@ const books = [
   },
 ];
 
-function smallerName() {
-  let nameBook;
-  // escreva aqui o seu código
-  books.forEach((book) => {
-    if (nameBook === undefined || nameBook.length > book.name.length)
-      nameBook = book.name
-  })
-  // Variável nameBook que receberá o valor do menor nome;
-  return nameBook;
-}
+const expectedResult = [
+  {
+    age: 31,
+    author: 'Isaac Asimov'
+  },
+  {
+    age: 38,
+    author: 'H. P. Lovecraft'
+  },
+  {
+    age: 39,
+    author: 'Stephen King'
+  },
+  {
+    age: 43,
+    author: 'George R. R. Martin'
+  },
+  {
+    age: 45,
+    author: 'Frank Herbert'
+  },
+  {
+    age: 62,
+    author: 'J. R. R. Tolkien'
+  }
+];
 
-assert.strictEqual(smallerName(), 'Duna');
+function nameAndAge() {
+  // escreva seu código aqui
+  let obj = books.map((book) => {    
+    const resposta = {
+        age: (book.releaseYear - book.author.birthYear),
+        author: book.author.name,
+    }
+    return resposta
+  })
+  return obj
+};
+
+
+console.log(nameAndAge());
+//assert.deepStrictEqual(nameAndAge(), expectedResult);

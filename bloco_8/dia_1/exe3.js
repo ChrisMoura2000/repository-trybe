@@ -1,4 +1,5 @@
 const assert = require('assert');
+const { get } = require('http');
 
 const books = [
   {
@@ -63,15 +64,24 @@ const books = [
   },
 ];
 
-function smallerName() {
-  let nameBook;
-  // escreva aqui o seu código
-  books.forEach((book) => {
-    if (nameBook === undefined || nameBook.length > book.name.length)
-      nameBook = book.name
+const expectedResult = {
+  author: {
+    birthYear: 1948,
+    name: 'George R. R. Martin'
+  },
+  genre: 'Fantasia',
+  id: 1,
+  name: 'As Crônicas de Gelo e Fogo',
+  releaseYear: 1991
+};
+
+function getNamedBook() {
+  // escreva seu código aqui
+  return books.find((book) => {
+      if(book.name.length === 26){
+          return book
+      }
   })
-  // Variável nameBook que receberá o valor do menor nome;
-  return nameBook;
 }
 
-assert.strictEqual(smallerName(), 'Duna');
+assert.deepStrictEqual(getNamedBook(), expectedResult);

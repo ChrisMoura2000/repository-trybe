@@ -1,3 +1,4 @@
+
 const assert = require('assert');
 
 const books = [
@@ -63,15 +64,19 @@ const books = [
   },
 ];
 
-function smallerName() {
-  let nameBook;
-  // escreva aqui o seu código
-  books.forEach((book) => {
-    if (nameBook === undefined || nameBook.length > book.name.length)
-      nameBook = book.name
-  })
-  // Variável nameBook que receberá o valor do menor nome;
-  return nameBook;
+
+function allNames() {
+  // escreva seu código aqui 
+  return books.reduce((previusValue, currentValue, index, arrayBooks) => {
+    /*
+    if(index === arrayBooks.length - 1){
+      return `${previusValue} ${currentValue.author.name}.`
+    } else {
+      return `${previusValue} ${currentValue.author.name},`
+    }
+    */
+   return (index === arrayBooks.length - 1) ? `${previusValue} ${currentValue.author.name}.` : `${previusValue} ${currentValue.author.name},`
+  }, 'Nomes:');
 }
 
-assert.strictEqual(smallerName(), 'Duna');
+assert.deepStrictEqual(allNames(), "Nomes: George R. R. Martin, J. R. R. Tolkien, Isaac Asimov, Frank Herbert, Stephen King, H. P. Lovecraft.");
