@@ -1,0 +1,16 @@
+.App {
+  text-align: center;
+}
+
+.pkinfos {
+  border: 2px solid lightcoral;
+  display: flex;
+  justify-content: center;
+  padding: 10%;
+}
+
+body {
+  background-color: lightcyan;
+  display: flex;
+  justify-content: center;
+}
