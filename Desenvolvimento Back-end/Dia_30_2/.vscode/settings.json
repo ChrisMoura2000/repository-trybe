@@ -1,0 +1,18 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "dia_30_2",
+            "group": "exercicios",
+            "database": "ex30ponto2",
+            "username": "root",
+            "password": "Ubuntotrybe.2020"
+        }
+    ]
+}
